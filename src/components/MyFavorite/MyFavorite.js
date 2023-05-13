@@ -30,26 +30,26 @@ const MyFavorite = () => {
   }, [setLikedFoods, jwtToken]);
 
   // Like Button
-  const handleLikeButton = (food) => {
-    const foodId = food.id;
-    axios({
-      method: "post",
-      url: `${process.env.REACT_APP_BASEURL}/api/v1/like`,
-      headers: {
-        apiKey: `${process.env.REACT_APP_APIKEY}`,
-        Authorization: `Bearer ${jwtToken}`,
-      },
-      data: {
-        foodId: foodId,
-      },
-    })
-      .then(() => {
-        setToggleLike((prevState) => !prevState);
-      })
-      .catch(() => {
-        alert("You have to login to use this feature!");
-      });
-  };
+  // const handleLikeButton = (food) => {
+  //   const foodId = food.id;
+  //   axios({
+  //     method: "post",
+  //     url: `${process.env.REACT_APP_BASEURL}/api/v1/like`,
+  //     headers: {
+  //       apiKey: `${process.env.REACT_APP_APIKEY}`,
+  //       Authorization: `Bearer ${jwtToken}`,
+  //     },
+  //     data: {
+  //       foodId: foodId,
+  //     },
+  //   })
+  //     .then(() => {
+  //       setToggleLike((prevState) => !prevState);
+  //     })
+  //     .catch(() => {
+  //       alert("You have to login to use this feature!");
+  //     });
+  // };
   
   // // onClick for food details
   const onClickDetails = (food) => {

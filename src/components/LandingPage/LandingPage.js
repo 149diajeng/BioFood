@@ -1,7 +1,6 @@
 import "./LandingPage.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import { useState, useEffect } from "react";
 import { Container, Button, Row, Col } from "react-bootstrap";
 import axios from "axios";
 import logo from "../../images/biofoodoke.png"
@@ -14,24 +13,24 @@ const LandingPage = () => {
   // const [isLoading, setIsLoading] = useState(true);
 
   // Get All Foods
-  const getFoodList = () => {
-    axios({
-      method: "get",
-      url: `${process.env.REACT_APP_BASEURL}/api/v1/foods`,
-      headers: {
-        Authorization: `Bearer ${process.env.REACT_APP_JWTTOKEN}`,
-        apiKey: `${process.env.REACT_APP_APIKEY}`,
-      },
-    })
-      .then((response) => {
+  // const getFoodList = () => {
+  //   axios({
+  //     method: "get",
+  //     url: `${process.env.REACT_APP_BASEURL}/api/v1/foods`,
+  //     headers: {
+  //       Authorization: `Bearer ${process.env.REACT_APP_JWTTOKEN}`,
+  //       apiKey: `${process.env.REACT_APP_APIKEY}`,
+  //     },
+  //   })
+      // .then((response) => {
         // console.log(response.data.data);
       //   setMostFavorite(response.data.data.sort((a, b) => b.totalLikes - a.totalLikes).filter((e, i) => i < 3));
       //   setIsLoading(false);
       // })
       // .catch((error) => {
       //   console.log(error);
-      });
-  };
+  //     });
+  // };
 
   // onClick for food details
   // const onClickDetails = (food) => {

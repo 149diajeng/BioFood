@@ -1,7 +1,7 @@
 import "./Footer.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub} from "react-icons/fa";
 import { Row, Col, Container, InputGroup, Form, Button } from "react-bootstrap";
-import { useState, useEffect } from "react";
+
 
 const Footer = () => {
   return (
