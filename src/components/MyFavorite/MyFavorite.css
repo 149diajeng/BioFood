@@ -1,0 +1,47 @@
+/* Favorite Section Styles */
+.favorite-section {
+  background-size: cover;
+  background-position: center;
+  background: url("../../images/udhbagus.jpg");
+  /* background-blend-mode: darken; */
+
+  /* border-top: 2px solid rgba(3, 172, 14, 0.1); */
+}
+
+.favorite-text {
+  font-size: 32px;
+  font-weight: 400;
+  color: black;
+  opacity: 1;
+
+  text-align: center;
+}
+
+.favorite-text-2 {
+  font-size: 24px;
+
+  color: black;
+  text-align: center;
+}
+
+.favorite-error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  height: 50vh;
+}
+
+.regist-link:hover {
+  color: #E2A76F;
+}
+
+/* End of Favorite Section Styles */
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .foodlist-img {
+    width: 250px;
+    height: 200px;
+  }
+}
