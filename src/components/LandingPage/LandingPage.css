@@ -64,6 +64,10 @@ body {
   width: 30vh;
 }
 
+.img-us{
+  width: 30vh;
+  border-radius: 50%;
+}
 .intro-text {
   font-size: 30px;
   font-weight: 700;
@@ -140,7 +144,7 @@ body {
 
 /* Feature Section Styles */
 .feature-section {
-  background: url("../../images/section2.jpg");
+  background: url("../../images/123gambar.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

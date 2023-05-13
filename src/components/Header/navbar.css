@@ -1,0 +1,104 @@
+.header-brand {
+  flex: 1;
+   width: 80px !important;
+  font-family: "Spline Sans";
+  font-weight: 700 !important;
+  font-size: 40px !important;
+  line-height: 50px;
+   letter-spacing: 2px;
+
+}
+.login-header:hover {
+  opacity: 1 !important;
+}
+
+.logo-image {
+  max-width: 100%;
+}
+
+/* .navbar-toggler {
+  border: none;
+  padding: 0;
+} */
+
+.header-link,
+.header-username {
+  font-family: "Spline Sans", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+
+  color: yellowgreen !important;
+  opacity: 0.7;
+}
+.login-header {
+  font-family: "Spline Sans", sans-serif !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+
+  color: white !important;
+  opacity: 0.7;
+
+  text-decoration: none;
+}
+
+.navbar-toggler-icon {
+  width: 24px;
+  height: 16px;
+  background-color: transparent;
+}
+
+.header-link {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.dropdown-menu::after {
+  border: 250px solid white;
+}
+
+.header-username {
+  margin-left: 30px;
+  color: yellowgreen;
+}
+
+.btn-signin {
+  margin-left: auto;
+}
+
+/* burger menu */
+.header-container .navbar-toggler {
+  border: none;
+  height: 3rem;
+  width: 3rem;
+  padding: 0;
+}
+
+.header-container .navbar-toggler:focus,
+.header-container .navbar-toggler:hover {
+  outline: none;
+}
+
+.header-container .navbar-toggler .navbar-toggler-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: yellowgreen; /* Change the color of the icon bars */
+}
+
+.header-container .navbar-toggler.collapsed .navbar-toggler-icon {
+  color: yellowgreen; /* Change the color of the collapsed icon */
+}
+
+
+@media (max-width: 767px) {
+  .header-link {
+    margin-right: 0;
+  }
+
+  .header-username {
+    margin-left: 0;
+  }
+}
