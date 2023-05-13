@@ -2,7 +2,6 @@ import "./LandingPage.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { Container, Button, Row, Col } from "react-bootstrap";
-import axios from "axios";
 import logo from "../../images/biofoodoke.png"
 import create  from "../../images/create.jpg"
 import healthy from "../../images/healthy.jpg"

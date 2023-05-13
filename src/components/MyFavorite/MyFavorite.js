@@ -7,7 +7,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 
 const MyFavorite = () => {
   const [likedFoods, setLikedFoods] = useState([]);
-  const [toggleLike, setToggleLike] = useState(false);
+  const [toggleLike] = useState(false);
 
   const jwtToken = localStorage.getItem("token");
 
