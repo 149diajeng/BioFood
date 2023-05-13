@@ -1,8 +1,8 @@
 /* Favorite Section Styles */
 .foodlist-section {
-  /* background: url("../../images/background.jpg"); */
+  background: url("../../images/ini\ bagus.jpg");
   background-size: cover;
-  background-color: #E2A76F;
+  /* background-color: #E2A76F; */
   background-position: center;
 }
 
@@ -11,12 +11,17 @@
   text-align: center;
 }
 
+.btn-foodlist {
+  background-color: yellowgreen;
+  outline: none;
+}
+
 .foodlist-img {
   width: 300px;
   aspect-ratio: 6 / 5;
 
   min-width: 250px !important;
-  border: 2px solid white;
+  border: 2px solid yellowgreen;
   padding: 3px;
   margin: 5px;
   /* border-radius: 16px; */

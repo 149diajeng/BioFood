@@ -141,10 +141,13 @@ const Profile = () => {
                     {userData.role} account
                   </p>
                 </div>
-              </div>
-              <Button className="btn-success d-flex m-auto mt-4" onClick={handleShow}>
+                <Button className="btn-warning d-flex m-auto mt-4" onClick={handleShow}>
                 Edit Profile
               </Button>
+              <br>
+              </br>
+              </div>
+              
 
               <Modal show={show} centered onHide={handleClose} backdrop="static" keyboard={false}>
                 <Modal.Header closeButton>

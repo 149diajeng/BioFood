@@ -4,7 +4,7 @@ import Footer from "../Footer/Footer";
 
 import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import { FaStar, FaHeart } from "react-icons/fa";
 
 const FoodList = () => {
@@ -93,7 +93,7 @@ const FoodList = () => {
         {/* Taken from LandingPage - Favorite Section */}
         <div className="pt-4 pb-5">
           <Container>
-            <h1 className="foodlist-title mb-5 pt-3">Our Recipes</h1>
+            <h1 className="foodlist-title mb-5 pt-3">Recipes</h1>
 
             <Row className="foodlist-row g-1">
               {!isLoading
@@ -114,10 +114,14 @@ const FoodList = () => {
                         <p className="foodlist-text">{food.name}</p>
                         <div className="foodlist-rates mb-3">
                           <span className="foodlist-rates-text">
-                            <FaStar style={{ color: "gold" }} /> {food.rating}
+                            <Button className=" btn-light btn-foodlist">
+                              <FaStar style={{ color: "gold" }} /> {food.rating}
+                            </Button>
+                            
                           </span>
                           <span className="foodlist-rates-text">
-                            <FaHeart
+                            <Button className="btn-light btn-foodlist"> 
+                              <FaHeart
                               className="foodlist-heart-icon"
                               style={!food.isLike ? { color: "grey" } : { color: "red" }}
                               onClick={() => {
@@ -125,6 +129,9 @@ const FoodList = () => {
                               }}
                             />
                             {food.totalLikes}
+                            </Button>
+                            
+                            
                           </span>
                         </div>
                       </Col>

@@ -18,7 +18,7 @@
   margin: 50%;
   width: 300px;
   /* padding: 30px; */
-  background-color: palevioletred;
+  background-color: yellowgreen;
   border: 2px solid palevioletred;
   border-radius: 20px;
 
@@ -110,16 +110,23 @@
   width: 60%;
   aspect-ratio: 1/1;
   border-radius: 50%;
-
+  /* color: palevioletred; */
   margin: auto;
-  background-color: palevioletred;
+  /* background-color: palevioletred !important; */
   border: 1px solid;
   /* box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.3); */
+}
+
+.modal-content {
+  background-color: yellowgreen !important;
+  /* box-shadow: 0px 0px 8px 2px rgb(255 255 255 / 35%); */
 }
 
 .profile-modal-btn {
   display: flex;
   margin: auto;
+  color: grey;
+  background-color: white;
 }
 
 @media screen and (max-width: 576px) {

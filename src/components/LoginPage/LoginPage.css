@@ -1,10 +1,9 @@
 .register-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../../images/loginSection-bg.webp");
-
+  background: url("../../images/udhbagus.jpg");
   background-size: cover;
   background-position: center;
-  background-blend-mode: darken;
-  height: 100vh;
+  /* background-blend-mode: darken; */
+  /* height: 100vh; */
 }
 
 .login-bubble {
@@ -12,9 +11,7 @@
   padding: 24px;
   margin-top: 80px !important;
 
-  background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 8px 5px 20px 0px rgba(3, 172, 14, 0.8), inset 1px 2px 4px 0px rgba(3, 172, 14, 0.8), inset 1px 2px 2px 0px yellow;
-
+  background:yellowgreen;
   border-radius: 20px;
 
   display: flex;
@@ -34,12 +31,12 @@
   margin-bottom: 16px !important;
   margin: auto;
 
-  color: var(--green-tp);
+  color: white;
 }
 
 .login-brand:hover {
   opacity: 0.8;
-  color: var(--green-tp);
+  color: chocolate;
 }
 
 .login-regist-area {
@@ -57,11 +54,12 @@
 
   font-size: 18px;
   font-weight: bold;
-  color: var(--green-tp);
-  background: black;
+  /* color: var(--green-tp); */
+  background: white;
 
   border-radius: 8px;
 }
+
 
 .login-label {
   font-size: 20px;
@@ -70,6 +68,10 @@
 
 .login-label:last-child {
   font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: grey !important;
 }
 
 .regist-text {

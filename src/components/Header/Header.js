@@ -1,5 +1,5 @@
 import "./Header.css";
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown, Container, Button } from "react-bootstrap";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import logo from "../../images/biofoodoke.png";
@@ -83,9 +83,12 @@ const Header = () => {
                 <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
               </NavDropdown>
             ) : (
-              <a href="/login" className="login-header">
+              <Button className="btn-signin">
+                <a href="/login" className="login-header">
                 Sign In
               </a>
+              </Button>
+              
             )}
           </Navbar.Collapse>
         </Container>
