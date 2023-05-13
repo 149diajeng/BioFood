@@ -1,11 +1,9 @@
 import "./MyFavorite.css";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-
 import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { FaStar, FaHeart } from "react-icons/fa";
 
 const MyFavorite = () => {
   const [likedFoods, setLikedFoods] = useState([]);
@@ -52,30 +50,8 @@ const MyFavorite = () => {
         alert("You have to login to use this feature!");
       });
   };
-
-  // Unlike Button
-  const handleUnlikeButton = (food) => {
-    const foodId = food.id;
-    axios({
-      method: "post",
-      url: `${process.env.REACT_APP_BASEURL}/api/v1/unlike`,
-      headers: {
-        apiKey: `${process.env.REACT_APP_APIKEY}`,
-        Authorization: `Bearer ${jwtToken}`,
-      },
-      data: {
-        foodId: foodId,
-      },
-    })
-      .then(() => {
-        setToggleLike((prevState) => !prevState);
-      })
-      .catch(() => {
-        alert("You have to login to use this feature!");
-      });
-  };
-
-  // onClick for food details
+  
+  // // onClick for food details
   const onClickDetails = (food) => {
     window.location.assign(`/detail?foodId=${food.id}`);
   };
@@ -109,19 +85,6 @@ const MyFavorite = () => {
                     <img src={food.imageUrl} alt={food.name} onClick={() => onClickDetails(food)} className="foodlist-img img-fluid" />
                     <p className="foodlist-text">{food.name}</p>
                     <div className="foodlist-rates mb-3">
-                      {/* <span className="foodlist-rates-text">
-                        <FaStar style={{ color: "gold" }} /> {food.rating}
-                      </span> */}
-                      {/* <span className="foodlist-rates-text">
-                        <FaHeart
-                          className="foodlist-heart-icon"
-                          style={!food.isLike ? { color: "grey" } : { color: "red" }}
-                          onClick={() => {
-                            food.isLike ? handleUnlikeButton(food) : handleLikeButton(food);
-                          }}
-                        />
-                        {food.totalLikes}
-                      </span> */}
                     </div>
                   </Col>
                 );

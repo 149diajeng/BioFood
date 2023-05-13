@@ -3,7 +3,6 @@ import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import { useState, useEffect } from "react";
 import { Container, Button, Row, Col } from "react-bootstrap";
-import { FaStar, FaBookmark, FaPlusCircle } from "react-icons/fa";
 import axios from "axios";
 import logo from "../../images/biofoodoke.png"
 import create  from "../../images/create.jpg"
@@ -11,8 +10,8 @@ import healthy from "../../images/healthy.jpg"
 import review from "../../images/review.jpg"
 
 const LandingPage = () => {
-  const [mostFavorite, setMostFavorite] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  // const [mostFavorite, setMostFavorite] = useState([]);
+  // const [isLoading, setIsLoading] = useState(true);
 
   // Get All Foods
   const getFoodList = () => {
@@ -26,22 +25,22 @@ const LandingPage = () => {
     })
       .then((response) => {
         // console.log(response.data.data);
-        setMostFavorite(response.data.data.sort((a, b) => b.totalLikes - a.totalLikes).filter((e, i) => i < 3));
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        console.log(error);
+      //   setMostFavorite(response.data.data.sort((a, b) => b.totalLikes - a.totalLikes).filter((e, i) => i < 3));
+      //   setIsLoading(false);
+      // })
+      // .catch((error) => {
+      //   console.log(error);
       });
   };
 
   // onClick for food details
-  const onClickDetails = (food) => {
-    window.location.assign(`/detail?foodId=${food.id}`);
-  };
+  // const onClickDetails = (food) => {
+  //   window.location.assign(`/detail?foodId=${food.id}`);
+  // };
 
-  useEffect(() => {
-    getFoodList();
-  }, [isLoading]);
+  // useEffect(() => {
+  //   getFoodList();
+  // }, [isLoading]);
 
   return (
     <>
@@ -76,32 +75,6 @@ const LandingPage = () => {
         </div>
       </div>
       {/* End of Intro Section */}
-
-      {/* Favorite Section */}
-      {/* <div className="favorite-section pt-4 pb-5">
-        <Container>
-          <h1 className="favorite-title mb-5 pt-3">About Us</h1>
-          <Row className="favorite-row">
-            {mostFavorite.map((food, i) => {
-              return (
-                <Col
-                  key={i}
-                  sm={12}
-                  md={6}
-                  xl={4}
-                  className="d-flex flex-column align-items-center 
-                 mb-md-4 mb-4 "
-                >
-                  <img src={food.imageUrl} alt={food.name} onClick={() => onClickDetails(food)} className="favorite-img" />
-                  <p className="favorite-text mt-3">{food.name}</p>
-                </Col>
-              );
-            })}
-          </Row>
-        </Container>
-      </div> */}
-      {/* End of Favorite Section */}
-
       {/* Feature Section */}
       <div className="feature-section pt-5 pb-5">
         <Container>
