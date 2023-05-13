@@ -7,6 +7,7 @@ import { useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import Footer from "../Footer/Footer";
 
 const LoginPage = () => {
   const [passwordShown, setPasswordShown] = useState(false);
@@ -92,7 +93,9 @@ const LoginPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
+    
   );
 };
 

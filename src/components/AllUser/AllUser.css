@@ -12,8 +12,9 @@ body{
 }
 
 .alluser-section {
-  background: url("../../images/bg-ok.jpg");
-  color: white;
+  background: url("../../images/ini\ bagus.jpg");
+  color: yellowgreen;
+  /* background-size: cover; */
   
   /* background-blend-mode: darken; */
 
@@ -22,8 +23,9 @@ body{
 }
 
 .alluser-title {
-  color: white;
+  color: yellowgreen;
   text-align: center;
+  height: 40px;
 }
 
 .alluser-card {

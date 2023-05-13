@@ -6,6 +6,7 @@ import { Form, Button, Row, Col } from "react-bootstrap";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import Footer from "../Footer/Footer";
 
 const RegisterPage = () => {
   const formErrorStyle = { color: "red", fontSize: "14px", padding: "0", margin: "0" };
@@ -147,6 +148,7 @@ const RegisterPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
