@@ -62,11 +62,28 @@
 
 .header-username {
   margin-left: 30px;
-  color: yellowgreen;
+  /* color: white; */
+  font-size: 25px !important;
+  background-color: white;
+  border: 1px solid yellowgreen;
+  border-radius: 20px;
 }
 
+.header-username:hover {
+    color: yellowgreen;
+    background-color: yellow;
+}
 .btn-signin {
   margin-left: auto;
+  background-color: yellowgreen;
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+.btn-signin:hover {
+    color: black !important;
+    background-color: orange;
 }
 
 /* burger menu */

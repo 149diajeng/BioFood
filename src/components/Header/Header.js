@@ -77,13 +77,13 @@ const Header = () => {
           ) : null}
         </Nav>
         {isLogin ? (
-          <NavDropdown className="header-username" title={localStorage.getItem("name")} id="nav-dropdown">
+          <NavDropdown className="btn header-username" title={localStorage.getItem("name")} id="nav-dropdown">
             <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
             {isAdmin ? <NavDropdown.Item href="/all-user">All User (Admin)</NavDropdown.Item> : null}
             <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
           </NavDropdown>
         ) : (
-          <Button className="btn-signin">
+          <Button className="btn btn-light btn-signin">
             <a href="/login" className="login-header">
             Sign In
           </a>
@@ -94,51 +94,6 @@ const Header = () => {
     </Container>
   </Navbar>
 </div>
-
-    // <>
-    //   <Navbar expand="lg" >
-    //     <Container>
-    //       <Navbar.Brand className="header-brand " href="/">
-    //         <img className="logo-image" src={logo} alt="logo" style={{ width: "100px"}} />
-    //       </Navbar.Brand>
-    //       <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    //       <Navbar.Collapse id="basic-navbar-nav">
-    //         <Nav className="me-auto d-flex gap-3 ms-lg-5 mb-3 mb-lg-0">
-    //           <Nav.Link href="/" className="header-link">
-    //             Home
-    //           </Nav.Link>
-    //           {isLogin ? (
-    //             <Nav.Link href="/favorite" className="header-link">
-    //               Favorite
-    //             </Nav.Link>
-    //           ) : null}
-    //           <Nav.Link href="/foods" className="header-link">
-    //             Recipes
-    //           </Nav.Link>
-    //           {isAdmin ? (
-    //             <Nav.Link href="/add-food" className="header-link">
-    //               Add Food
-    //             </Nav.Link>
-    //           ) : null}
-    //         </Nav>
-    //         {isLogin ? (
-    //           <NavDropdown className="header-username" title={localStorage.getItem("name")} id="nav-dropdown">
-    //             <NavDropdown.Item href="/profile">Profile</NavDropdown.Item>
-    //             {isAdmin ? <NavDropdown.Item href="/all-user">All User (Admin)</NavDropdown.Item> : null}
-    //             <NavDropdown.Item onClick={handleLogout}>Logout</NavDropdown.Item>
-    //           </NavDropdown>
-    //         ) : (
-    //           <Button className="btn-signin">
-    //             <a href="/login" className="login-header">
-    //             Sign In
-    //           </a>
-    //           </Button>
-              
-    //         )}
-    //       </Navbar.Collapse>
-    //     </Container>
-    //   </Navbar>
-    // </>
   );
 };
 
