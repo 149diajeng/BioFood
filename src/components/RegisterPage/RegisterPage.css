@@ -1,5 +1,6 @@
 .register-section {
-  /* background-color: chocolate; */
+  background: url("../../images/okdeh.jpg");
+  height: 100vh;
   background-size: cover;
   background-position: center;
   /* background-blend-mode: darken; */
